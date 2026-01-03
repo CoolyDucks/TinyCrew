@@ -7,11 +7,11 @@ using UnityEngine.SceneManagement;
 
 namespace TinyCrew;
 
-[BepInAutoPlugin("coolyducks.tinycrew")]
+[BepInAutoPlugin("tinycrew.plugin")]
 [BepInProcess("Among Us.exe")]
 public partial class TinyCrewPlugin : BasePlugin
 {
-    public Harmony Harmony { get; } = new("coolyducks.tinycrew");
+    public Harmony Harmony { get; } = new("tinycrew.plugin");
     public static ConfigEntry<float> ConfigScale { get; private set; }
     public static float ScaleMod => ConfigScale.Value;
 
